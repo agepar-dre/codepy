@@ -1,0 +1,308 @@
+
+
+    • regex_var:
+str (objeto = '') -> str
+str (bytes_or_buffer [, codificação [, erros]]) -> str
+
+Crie um novo objeto String a partir do objeto especificado.Se codificar ou
+erros são especificados, então o objeto deve expor um buffer de dados
+Isso será decodificado usando a codificação e manipulador de erros fornecidos.
+Caso contrário, retorna o resultado do objeto .__ str __ () (se definido)
+ou repr (objeto).
+codificando padrões para sys.getDefaultEncoding ().
+erros padronizam para 'rigoroso'.
+
+    • a:
+
+    Dados tabulares bidimensionais, de tamanho grande e potencialmente heterogêneo.
+
+    A estrutura de dados também contém eixos marcados (linhas e colunas).
+    As operações aritméticas estão alinhadas nos rótulos das linhas e colunas.Pode ser
+    pensado como um contêiner do tipo dicto para objetos de série.O primário
+    Estrutura de dados de pandas.
+
+    • C:
+str (objeto = '') -> str
+str (bytes_or_buffer [, codificação [, erros]]) -> str
+
+Crie um novo objeto String a partir do objeto especificado.Se codificar ou
+erros são especificados, então o objeto deve expor um buffer de dados
+Isso será decodificado usando a codificação e manipulador de erros fornecidos.
+Caso contrário, retorna o resultado do objeto .__ str __ () (se definido)
+ou repr (objeto).
+codificando padrões para sys.getDefaultEncoding ().
+erros padronizam para 'rigoroso'.
+
+    • Cell_value:
+    
+
+    • col_name:
+str (objeto = '') -> str
+str (bytes_or_buffer [, codificação [, erros]]) -> str
+
+Crie um novo objeto String a partir do objeto especificado.Se codificar ou
+erros são especificados, então o objeto deve expor um buffer de dados
+Isso será decodificado usando a codificação e manipulador de erros fornecidos.
+Caso contrário, retorna o resultado do objeto .__ str __ () (se definido)
+ou repr (objeto).
+codificando padrões para sys.getDefaultEncoding ().
+erros padronizam para 'rigoroso'.
+
+    • col_name_print:
+str (objeto = '') -> str
+str (bytes_or_buffer [, codificação [, erros]]) -> str
+
+Crie um novo objeto String a partir do objeto especificado.Se codificar ou
+erros são especificados, então o objeto deve expor um buffer de dados
+Isso será decodificado usando a codificação e manipulador de erros fornecidos.
+Caso contrário, retorna o resultado do objeto .__ str __ () (se definido)
+ou repr (objeto).
+codificando padrões para sys.getDefaultEncoding ().
+erros padronizam para 'rigoroso'.
+
+    • col_values:
+
+    NDarray unidimensional com rótulos de eixo (incluindo séries temporais).
+
+    Os rótulos não precisam ser únicos, mas devem ser do tipo hashable.O objeto
+    suporta indexação baseada em inteiro e rótulo e fornece uma série de
+    Métodos para executar operações envolvendo o índice.Estatística
+    Os métodos da NDARRAY foram substituídos para excluir automaticamente
+    Dados ausentes (atualmente representados como NAN).
+
+    • Coluna:
+str (objeto = '') -> str
+str (bytes_or_buffer [, codificação [, erros]]) -> str
+
+Crie um novo objeto String a partir do objeto especificado.Se codificar ou
+erros são especificados, então o objeto deve expor um buffer de dados
+Isso será decodificado usando a codificação e manipulador de erros fornecidos.
+Caso contrário, retorna o resultado do objeto .__ str __ () (se definido)
+ou repr (objeto).
+codificando padrões para sys.getDefaultEncoding ().
+erros padronizam para 'rigoroso'.
+
+    • colunas_i:
+Sequência mutável embutida.
+
+Se nenhum argumento for fornecido, o construtor cria uma nova lista vazia.
+O argumento deve ser um iterável se especificado.
+
+    • correspondências:
+Sequência mutável embutida.
+
+Se nenhum argumento for fornecido, o construtor cria uma nova lista vazia.
+O argumento deve ser um iterável se especificado.
+
+    • D_SHEETS:
+dict () -> novo dicionário vazio
+dict (mapeamento) -> Novo dicionário inicializado a partir de um objeto de mapeamento
+    (chave, valor) pares
+dict (iterable) -> Novo dicionário inicializado como se via:
+    d = {}
+    Para K, V em Iterable:
+        d [k] = V
+dict (** kwargs) -> Novo dicionário inicializado com o nome = pares de valor
+    na lista de argumentos de palavras -chave.Por exemplo: dict (um = 1, dois = 2)
+
+    • df:
+
+    Dados tabulares bidimensionais, de tamanho grande e potencialmente heterogêneo.
+
+    A estrutura de dados também contém eixos marcados (linhas e colunas).
+    As operações aritméticas estão alinhadas nos rótulos das linhas e colunas.Pode ser
+    pensado como um contêiner do tipo dicto para objetos de série.O primário
+    Estrutura de dados de pandas.
+
+    • gerar_prompt: 
+Gera um prompt para documentação de função Python com base em uma fórmula do Excel.
+
+    • tem_l:
+bool (x) -> bool
+
+Retorna verdadeiro quando o argumento x é verdadeiro, false caso contrário.
+Os Buildins True e False são as únicas duas instâncias da classe Bool.
+A classe Bool é uma subclasse da classe INT e não pode ser subclassificada.
+
+    • eu:
+int ([x]) -> inteiro
+int (x, base = 10) -> Inteiro
+
+Converter um número ou string em um número inteiro ou retornar 0 se não houver argumentos
+são dados.Se x for um número, retorne x .__ int __ ().Para ponto flutuante
+Números, isso trunca em direção a zero.
+
+Se x não for um número ou se a base for fornecida, então x deve ser uma string,
+bytes, ou instância de bytearray representando um inteiro literal no
+dada base.O literal pode ser precedido por '+' ou '-' e ser cercado
+por espaço em branco.Os padrões de base para 10. As bases válidas são 0 e 2-36.
+A base 0 significa interpretar a base da string como um número inteiro literal.
+>>> int ('0b100', base = 0)
+4
+
+    • IDX:
+int ([x]) -> inteiro
+int (x, base = 10) -> Inteiro
+
+Converter um número ou string em um número inteiro ou retornar 0 se não houver argumentos
+são dados.Se x for um número, retorne x .__ int __ ().Para ponto flutuante
+Números, isso trunca em direção a zero.
+
+Se x não for um número ou se a base for fornecida, então x deve ser uma string,
+bytes, ou instância de bytearray representando um inteiro literal no
+dada base.O literal pode ser precedido por '+' ou '-' e ser cercado
+por espaço em branco.Os padrões de base para 10. As bases válidas são 0 e 2-36.
+A base 0 significa interpretar a base da string como um número inteiro literal.
+>>> int ('0b100', base = 0)
+4
+
+    • int_to_col_letter: 
+Converte um número para uma letra de coluna do Excel.
+
+    • k:
+str (objeto = '') -> str
+str (bytes_or_buffer [, codificação [, erros]]) -> str
+
+Crie um novo objeto String a partir do objeto especificado.Se codificar ou
+erros são especificados, então o objeto deve expor um buffer de dados
+Isso será decodificado usando a codificação e manipulador de erros fornecidos.
+Caso contrário, retorna o resultado do objeto .__ str __ () (se definido)
+ou repr (objeto).
+codificando padrões para sys.getDefaultEncoding ().
+erros padronizam para 'rigoroso'.
+
+    • eu:
+str (objeto = '') -> str
+str (bytes_or_buffer [, codificação [, erros]]) -> str
+
+Crie um novo objeto String a partir do objeto especificado.Se codificar ou
+erros são especificados, então o objeto deve expor um buffer de dados
+Isso será decodificado usando a codificação e manipulador de erros fornecidos.
+Caso contrário, retorna o resultado do objeto .__ str __ () (se definido)
+ou repr (objeto).
+codificando padrões para sys.getDefaultEncoding ().
+erros padronizam para 'rigoroso'.
+
+    • letra:
+str (objeto = '') -> str
+str (bytes_or_buffer [, codificação [, erros]]) -> str
+
+Crie um novo objeto String a partir do objeto especificado.Se codificar ou
+erros são especificados, então o objeto deve expor um buffer de dados
+Isso será decodificado usando a codificação e manipulador de erros fornecidos.
+Caso contrário, retorna o resultado do objeto .__ str __ () (se definido)
+ou repr (objeto).
+codificando padrões para sys.getDefaultEncoding ().
+erros padronizam para 'rigoroso'.
+
+    • nome:
+str (objeto = '') -> str
+str (bytes_or_buffer [, codificação [, erros]]) -> str
+
+Crie um novo objeto String a partir do objeto especificado.Se codificar ou
+erros são especificados, então o objeto deve expor um buffer de dados
+Isso será decodificado usando a codificação e manipulador de erros fornecidos.
+Caso contrário, retorna o resultado do objeto .__ str __ () (se definido)
+ou repr (objeto).
+codificando padrões para sys.getDefaultEncoding ().
+erros padronizam para 'rigoroso'.
+
+    • Padrao:
+str (objeto = '') -> str
+str (bytes_or_buffer [, codificação [, erros]]) -> str
+
+Crie um novo objeto String a partir do objeto especificado.Se codificar ou
+erros são especificados, então o objeto deve expor um buffer de dados
+Isso será decodificado usando a codificação e manipulador de erros fornecidos.
+Caso contrário, retorna o resultado do objeto .__ str __ () (se definido)
+ou repr (objeto).
+codificando padrões para sys.getDefaultEncoding ().
+erros padronizam para 'rigoroso'.
+
+    • caminho:
+str (objeto = '') -> str
+str (bytes_or_buffer [, codificação [, erros]]) -> str
+
+Crie um novo objeto String a partir do objeto especificado.Se codificar ou
+erros são especificados, então o objeto deve expor um buffer de dados
+Isso será decodificado usando a codificação e manipulador de erros fornecidos.
+Caso contrário, retorna o resultado do objeto .__ str __ () (se definido)
+ou repr (objeto).
+codificando padrões para sys.getDefaultEncoding ().
+erros padronizam para 'rigoroso'.
+
+    • path_txt:
+str (objeto = '') -> str
+str (bytes_or_buffer [, codificação [, erros]]) -> str
+
+Crie um novo objeto String a partir do objeto especificado.Se codificar ou
+erros são especificados, então o objeto deve expor um buffer de dados
+Isso será decodificado usando a codificação e manipulador de erros fornecidos.
+Caso contrário, retorna o resultado do objeto .__ str __ () (se definido)
+ou repr (objeto).
+codificando padrões para sys.getDefaultEncoding ().
+erros padronizam para 'rigoroso'.
+
+    • PD:
+PANDAS - Um pacote Python que fornece dados rápidos, flexíveis e expressivos
+estruturas projetadas para tornar o trabalho com dados "relacionais" ou "rotulados" ambos
+fácil e intuitivo.Ele pretende ser o bloco de construção fundamental de alto nível para
+Fazendo prática, ** Análise de dados do mundo real ** em Python.Além disso, tem
+O objetivo mais amplo de se tornar ** os dados de código aberto mais poderosos e flexíveis
+Ferramenta de análise / manipulação disponível em qualquer idioma **.Já está bem em
+seu caminho para esse objetivo.
+
+    • Re:
+Suporte para expressões regulares (RE).
+
+Este módulo fornece operações de correspondência de expressão regulares semelhantes a
+aqueles encontrados em Perl.Ele suporta seqüências de 8 bits e unicode;ambos
+O padrão e as cordas que estão sendo processadas podem conter bytes nulos e
+Personagens fora da faixa ASCII dos EUA.
+
+    • remove_lines: 
+Remove linhas específicas de um arquivo de texto.
+
+    • remove_num: 
+Remove números de uma string.
+
+    • remove_space: 
+Remove espaços de uma string.
+
+    • sao_todas_strings: 
+Verifica se todos os elementos em uma lista são strings.
+    • Sheet_names:
+Sequência mutável embutida.
+Se nenhum argumento for fornecido, o construtor cria uma nova lista vazia.
+O argumento deve ser um iterável se especificado.
+
+    • Sheet_anges:
+Representa uma planilha.
+    
+    • substituir_ponto_por_virgula: 
+Substitui pontos por vírgulas em números decimais.
+
+    • substituir_sheet:
+Esta função substitui referências a planilhas por identificadores específicos.
+
+    • substituir_virgula_por_ponto_virgula:
+Substitui vírgulas por ponto e vírgula em uma string.
+
+    • trocar_por_chave:
+Troca um valor em um dicionário por sua chave correspondente.
+
+    • v:
+Cria um novo objeto string a partir do objeto fornecido. Se codificação ou erros forem especificados, o objeto deve expor um buffer de dados que será decodificado usando a codificação e o manipulador de erros fornecidos. Caso contrário, retorna o resultado de object.str() (se definido) ou repr(object).
+
+    • var:
+Sequência mutável embutida.
+Se nenhum argumento for fornecido, o construtor cria uma nova lista vazia. O argumento deve ser um iterável, se especificado.
+
+    • verifica_formula:
+Verifica se uma string representa uma fórmula do Excel.
+
+    • wb:
+A Pasta de trabalho é o contêiner para todas as outras partes do documento.
+
+    • written:
+Cria uma coleção não ordenada de elementos únicos.

@@ -1,0 +1,127 @@
+Dicionario de dados
+a: Identificador BRR
+b: Plaqueta
+c: Código PPA
+d: Código licitação
+e: Conta contábil
+f: Serviço
+g: Município
+h: Descrição
+i: Quantitativo
+j: C_principal
+k: C_EA
+l: C_EA%
+m: C_CA
+n: C_CA%
+o: C_imob
+p: C_JOA
+q: C_JOA%
+r: WACC
+s: Períodos_JOA [meses]
+t: C_JOAR%
+u: C_JOAR
+v: CH
+w: Data imob
+x: Data oper
+y: Data-base laudo
+z: Data-base BRR
+aa: IPCA_imob
+ab: Data_IPCA_final
+ac: IPCA_final
+ad: Delta_IPCA
+ae: CHC
+af: Código contrato
+ag: Prazo contrato [anos]
+ah: Vida útil física [anos]
+ai: Vida útil regulatória [critério]
+aj: Vida útil regulatória [anos]
+ak: TDR [anual]
+al: TDR [mensal]
+am: DeltaT_oper [meses]
+an: DRA
+ao: CHC_liquido
+ap: IA
+aq: Baixa
+ar: Qtde_baixa
+as: Data_baixa
+at: Delta_baixa
+au: Elegível  QRR
+av: Elegível juros
+aw: BRR_bruta
+ax: BRR_liquida
+ay: QRR [anual]
+az: Juros [anual]
+------------------------------
+Formulas:
+Coluna b (Plaqueta):
+b=B+1
+------------------------------
+Coluna k (C_EA):
+k=J*L
+------------------------------
+Coluna m (C_CA):
+m=J*N
+------------------------------
+Coluna o (C_imob):
+o=J+K+M
+------------------------------
+Coluna q (C_JOA%):
+q=P/O
+------------------------------
+Coluna r (WACC):
+r=R
+------------------------------
+Coluna u (C_JOAR):
+u=O*T
+------------------------------
+Coluna v (CH):
+v=O+U
+------------------------------
+Coluna z (Data-base BRR):
+z=Z
+------------------------------
+Coluna ab (Data_IPCA_final):
+ab=Y
+------------------------------
+Coluna ad (Delta_IPCA):
+ad=ROUND(AC/AA-1;4)
+------------------------------
+Coluna ae (CHC):
+ae=V*(1+AD)
+------------------------------
+Coluna aj (Vida útil regulatória [anos]):
+aj=IF(AI="Contrato";AG;IF(AI="Nãodeprecia";0;AH))
+------------------------------
+Coluna ak (TDR [anual]):
+ak=IF(AJ<>0;1/AJ;0)
+------------------------------
+Coluna al (TDR [mensal]):
+al=AK/12
+------------------------------
+Coluna am (DeltaT_oper [meses]):
+am=IF((Z-X)/365*12>AJ*12,AJ*12,(Z-X)/365*12)
+------------------------------
+Coluna an (DRA):
+an=AL*AM*AE
+------------------------------
+Coluna ao (CHC_liquido):
+ao=AE-AN
+------------------------------
+Coluna at (Delta_baixa):
+at=IF(YEAR(AS)<YEAR(Z),0,(MONTH(AS)-1)/12)
+------------------------------
+Coluna au (Elegível  QRR):
+au=IF(AI="Nãodeprecia";"Não";"Sim")
+------------------------------
+Coluna aw (BRR_bruta):
+aw=IF(Z>X;IF(AU="Sim";IF(AO>0;IF(AQ="Sim";IF(AR>I;0;AE*AP*(AT)+AE*AP*(1-AR/I)*(1-AT)),AE*AP),0),0),0)
+------------------------------
+Coluna ax (BRR_liquida):
+ax=IF(Z>X;IF(AV="Sim";IF(AO>0;IF(AQ="Sim";IF(AR>I;0;AO*AP*(AT)+AO*AP*(1-AR/I)*(1-AT)),AO*AP),0),0),0)
+------------------------------
+Coluna ay (QRR [anual]):
+ay=IF(AU="Sim";AW*AK;0)
+------------------------------
+Coluna az (Juros [anual]):
+az=IF(AV="Sim";AX*R;0)
+------------------------------
